@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Shop - 상품 상세</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="inner header-container">
+            <h1 class="logo">
+                <a href="index.html"><i class="fa-solid fa-cart-shopping"></i> K-Shop</a>
+            </h1>
+            <nav class="main-nav">
+                <a href="index.html">홈</a>
+                <a href="list.html" class="active">상품 목록</a>
+            </nav>
+            <nav class="user-menu">
+                <a href="#" class="btn-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="login.html" class="btn-icon"><i class="fa-regular fa-user"></i></a>
+                <a href="cart.html" id="btn-cart" class="btn-icon"><i class="fa-solid fa-cart-shopping"></i></a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container inner">
+        
+        <div class="back-link-wrap">
+            <a href="list.html" class="back-link">
+                <i class="fa-solid fa-arrow-left"></i> 상품 목록으로
+            </a>
+        </div>
+
+        <section class="detail-card">
+            <div class="detail-img">
+                <img src="https://via.placeholder.com/600x600/333/fff?text=Watch" alt="상품 이미지" id="main-img">
+            </div>
+
+            <div class="detail-info">
+                <p class="d-cate">액세서리</p>
+                <h2 class="d-title">가죽 벨트</h2>
+                <p class="d-price">45,000원</p>
+                
+                <p class="d-desc">
+                    고급 천연 가죽으로 제작된 정장 벨트입니다. <br>
+                    어떤 스타일에도 잘 어울리는 클래식한 디자인입니다.
+                </p>
+
+                <p class="d-stock">재고: <span id="stock-count">35</span>개</p>
+
+                <div class="quantity-wrap">
+                    <p class="label">수량</p>
+                    <div class="qty-control">
+                        <button class="qty-btn minus"><i class="fa-solid fa-minus"></i></button>
+                        <input type="number" value="1" class="qty-input" readonly>
+                        <button class="qty-btn plus"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+
+                <div class="detail-btns">
+                    <button class="btn-action cart">
+                        <i class="fa-solid fa-cart-plus"></i> 장바구니에 추가
+                    </button>
+                    <button class="btn-action buy">
+                        바로 구매
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="inner">
+            <p>Copyright &copy; 2026 K-Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="products.js"></script>
+    <script src="detail.js"></script>
+</body>
+</html>
