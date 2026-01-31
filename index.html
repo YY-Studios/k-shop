@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
@@ -18,25 +18,29 @@
     <header class="header">
       <div class="inner header-container">
         <h1 class="logo">
-          <a href="index.html">
-            <i class="fa-solid fa-cart-shopping"></i> K-Shop
-          </a>
+          <a href="index.html"
+            ><i class="fa-solid fa-cart-shopping"></i> K-Shop</a
+          >
         </h1>
-
         <nav class="main-nav">
-          <a href="index.html" class="active">홈</a>
+          <a href="index.html">홈</a>
           <a href="list.html">상품 목록</a>
         </nav>
-
         <nav class="user-menu">
-          <a href="list.html" class="btn-icon"
+          <a href="#" class="btn-icon"
             ><i class="fa-solid fa-magnifying-glass"></i
           ></a>
           <a href="login.html" class="btn-icon"
             ><i class="fa-regular fa-user"></i
           ></a>
-          <a href="#" id="btn-cart" class="btn-icon">
+          <a
+            href="cart.html"
+            id="btn-cart"
+            class="btn-icon active"
+            style="position: relative"
+          >
             <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-badge">1</span>
           </a>
         </nav>
       </div>
@@ -60,91 +64,7 @@
             ></a>
           </div>
 
-          <div class="product-list">
-            <article class="product-card">
-              <a href="detail.html?id=1" class="prd-link">
-                <div class="img-box">
-                  <img
-                    src="https://via.placeholder.com/300x300/ddd/333?text=Item+1"
-                    alt="프리미엄 코튼 티셔츠"
-                  />
-                </div>
-                <div class="info-box">
-                  <p class="category">의류</p>
-                  <h3 class="name">프리미엄 코튼 티셔츠</h3>
-                  <div class="price-cart">
-                    <p class="price">29,000원</p>
-                    <button class="btn-add-cart">
-                      <i class="fa-solid fa-cart-plus"></i>
-                    </button>
-                  </div>
-                </div>
-              </a>
-            </article>
-
-            <article class="product-card">
-              <a href="detail.html?id=2" class="prd-link">
-                <div class="img-box">
-                  <img
-                    src="https://via.placeholder.com/300x300/ddd/333?text=Item+2"
-                    alt="무선 블루투스 이어폰"
-                  />
-                </div>
-                <div class="info-box">
-                  <p class="category">전자제품</p>
-                  <h3 class="name">무선 블루투스 이어폰</h3>
-                  <div class="price-cart">
-                    <p class="price">89,000원</p>
-                    <button class="btn-add-cart">
-                      <i class="fa-solid fa-cart-plus"></i>
-                    </button>
-                  </div>
-                </div>
-              </a>
-            </article>
-
-            <article class="product-card">
-              <a href="detail.html?id=3" class="prd-link">
-                <div class="img-box">
-                  <img
-                    src="https://via.placeholder.com/300x300/ddd/333?text=Item+3"
-                    alt="스마트 워치"
-                  />
-                </div>
-                <div class="info-box">
-                  <p class="category">액세서리</p>
-                  <h3 class="name">스마트 워치</h3>
-                  <div class="price-cart">
-                    <p class="price">149,000원</p>
-                    <button class="btn-add-cart">
-                      <i class="fa-solid fa-cart-plus"></i>
-                    </button>
-                  </div>
-                </div>
-              </a>
-            </article>
-
-            <article class="product-card">
-              <a href="detail.html?id=4" class="prd-link">
-                <div class="img-box">
-                  <img
-                    src="https://via.placeholder.com/300x300/ddd/333?text=Item+4"
-                    alt="러닝 스니커즈"
-                  />
-                </div>
-                <div class="info-box">
-                  <p class="category">신발</p>
-                  <h3 class="name">러닝 스니커즈</h3>
-                  <div class="price-cart">
-                    <p class="price">79,000원</p>
-                    <button class="btn-add-cart">
-                      <i class="fa-solid fa-cart-plus"></i>
-                    </button>
-                  </div>
-                </div>
-              </a>
-            </article>
-          </div>
+          <div class="product-list"></div>
         </section>
       </div>
     </main>
@@ -155,26 +75,6 @@
       </div>
     </footer>
 
-    <script src="products.js"></script>
-    <script src="main.js"></script>
-
-    <div id="modal-container" class="modal-overlay">
-      <div class="modal-box">
-        <div class="modal-icon warning">
-          <i class="fa-solid fa-exclamation"></i>
-        </div>
-
-        <h3 class="modal-title">알림</h3>
-        <p class="modal-msg">
-          로그인이 필요한 서비스입니다.<br />로그인 페이지로 이동하시겠습니까?
-        </p>
-
-        <div class="modal-btns">
-          <button class="btn-modal-cancel" id="btn-modal-close">취소</button>
-          <button class="btn-modal-confirm" id="btn-modal-action">확인</button>
-        </div>
-      </div>
-    </div>
-    
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
